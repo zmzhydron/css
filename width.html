@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .pp {
+
+      display: inline-block;
+      width: 0;
+    }
+
+    .pp::before {
+      outline: solid 2px red;
+      content: "love -me我love"
+    }
+
+    #a {
+      width: 300px;
+      text-align: center;
+    }
+
+    #b {
+      padding: 20px;
+      background-color: greenyellow;
+      height: 100%;
+    }
+
+    #c {
+      display: inline-block;
+      word-break: break-all;
+      text-align: left;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #bt {}
+
+    #d {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: goldenrod;
+      height: 100%;
+      width: 100%;
+    }
+
+    #f {
+      position: relative;
+      width: 200px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 2550ms;
+    }
+
+    #f.active {
+      max-height: 5500px;
+    }
+
+    #e {
+      word-break: break-all;
+      text-align: center;
+      padding: 10px;
+      background: fuchsia;
+    }
+
+    #pp {
+      display: inline-block;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="a">
+    <div id="b">
+      <div id="b">345gfgsdfg4</div>
+      <!-- <span class="pp"></span> -->
+    </div>
+  </div>
+  <button id='btaa'>ffffff</button>
+  <div id="f">
+    <div id="e">
+      <p id='pp'>
+        点击我展现不定高的滚动出现效果 原理是通过设置max-height属性来展现，因为max-height不会影响元素的高度，只会影响元素的边界问题， 由此带来了一个问题，如果元素的高度只有200像素，但是max-height设置了2000，动画效果是1秒实现。
+        那么真实的元素要等多出来的800max-height高度隐藏完毕后才有反应，意思就是过了0.9秒后，才会才是隐藏。 所以就要考虑元素可能出现的高度和max-height值得关系。
+      </p>
+    </div>
+    <!-- <div id="d">
+
+    </div> -->
+  </div>
+
+</body>
+<script>
+  window.onload = function () {
+    var btaa = document.getElementById("btaa");
+    var divf = document.getElementById("f");
+    var flag = true;
+    btaa.onclick = function () {
+      console.log(f.classList);
+      if (flag) {
+        f.classList.add('active');
+        flag = false;
+      } else {
+        f.classList.remove("active");
+        flag = true;
+      }
+    }
+  }
+</script>
+
+</html>
