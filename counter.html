@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .parent{
+      padding-left: 20px;
+      counter-reset: aa 0;
+    }
+    .son{
+      counter-increment: aa;
+    }
+    .son::before{
+      content: ' parent: ' counters(aa, '-') '.  ';
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="son">
+      A
+      <div class="parent">
+        <div class="son">AA
+          <div class="parent">
+            <div class="son">AAA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="son">
+      B
+      <div class="parent">
+        <div class="son">BB
+          <div class="parent">
+            <div class="son">BBB</div>
+          </div>
+        </div>
+        <div class="son">BB1</div>
+        <div class="son">BB2</div>
+      </div>
+    </div>
+    <div class="son">C</div>
+  </div>
+</body>
+
+</html>

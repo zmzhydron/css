@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #a {
+      height: 300px;
+      width: 500px;
+      border: solid 1px red;
+      overflow: hidden;
+    }
+
+    #a1,
+    #a2,
+    #a3,
+    #a4 {
+      height: 1000px;
+      font-size: 72px;
+      font-weight: bold;
+    }
+
+    #a1 {
+      background: silver;
+    }
+
+    #a2 {
+      background: yellow;
+    }
+
+    #a3 {
+      background: purple;
+    }
+
+    #a4 {
+      background: limegreen;
+    }
+
+    #base {
+      position: absolute;
+      border: solid 10px goldenrod;
+      width: 50%;
+    }
+
+    #c {
+      height: 100px;
+      width: 300px;
+      position: absolute;
+      top: 0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background: fuchsia;
+    }
+    #d{
+      position: relative;
+    }
+    #dd{
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      background: lime;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="d">
+    <div id="dd"></div>
+  </div>
+  <div id="a">
+    <div id="a1">A1</div>
+    <div id="a2">A2</div>
+    <div id="a3">A3</div>
+    <div id="a4">A4</div>
+  </div>
+
+  <div id="c">
+    <div id="base">
+      <a href="#a1">跳转1</a>
+      <a href="#a2">跳转2</a>
+      <a href="#a3">跳转3</a>
+      <a href="#a4">跳转4</a>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    p:nth-of-type(3) {
+      color: red;
+    }
+
+    p:nth-child(3) {
+      color: green;
+    }
+
+    #pad {
+      background-color: green;
+      border: solid 1px red;
+      display: table;
+    }
+
+    #pad .shit1 {
+      height: 500px;
+      background: yellow;
+      display: table-cell;
+    }
+
+    #pad .shit2 {
+      background: green;
+      display: table-cell;
+    }
+
+    #pad span {
+      padding: 50%;
+      background: yellow;
+    }
+
+    #a {
+      /* overflow: hidden; */
+      margin-top: -50px;
+      margin-bottom: -20px;
+      background-color: yellow;
+    }
+
+    #b {
+      margin-bottom: 10px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div id="pad">
+    <div class='shit1'>百分比padding值与等比例头图效果实例页面</div>
+    <div class='shit2'>百分比padding值与等比例头图效果实例页面</div>
+  </div> -->
+  <div id="a">
+  </div>
+  <div id="b"></div>
+
+  <div id="hehe">
+    <p>1</p>
+    <span>b</span>
+    <p>2</p>
+    <span>a</span>
+    <p>3</p>
+    <span>c</span>
+    <p>4</p>
+    <span>d</span>
+    <p>5</p>
+    <p>6</p>
+  </div>
+
+</body>
+
+</html>

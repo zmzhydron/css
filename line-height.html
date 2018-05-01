@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #p {
+      line-height: 200px;
+      background: silver;
+      text-align: center;
+    }
+
+    #pp {
+      line-height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    #pp p {
+      width: 100px;
+    }
+
+    #a {
+      line-height: 100px;
+      background: rosybrown;
+    }
+
+    #b {
+      line-height: 100px;
+      background: greenyellow;
+    }
+
+    #bb {
+      display: inline-block;
+      line-height: 30px;
+      background: gold;
+      vertical-align: middle;
+    }
+
+    #c {
+      background: firebrick;
+      /* line-height: 150px; */
+      height: 300px;
+      font-size: 20px;
+    }
+
+    #c span {
+      display: inline-block;
+      font-size: 12px;
+      width: 100px;
+    }
+
+    #cc {
+      background: silver;
+      vertical-align: middle;
+      line-height: 25px;
+    }
+    #ccc{
+      background: yellow;
+      height: 100%;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="p">
+    <div id="pp">
+      <p>
+        我准备水平垂直居中，不管有多深 我准备水平垂直居中，不管有多深
+      </p>
+    </div>
+  </div>
+  <div id="a">
+    如果我是文字的话，在block元素中也会居中;
+  </div>
+  <div id="b">
+    <div id="bb">
+      如果我在inline-block的元素里的话，在block元素中不会居中，需要设置该元素vertical-align:middle;
+    </div>
+  </div>
+  <div id="c">
+      xxxxxxxxxx
+    <span id='cc'>
+        font-size：24
+    </span>
+    <span id='ccc'>
+      font-size：36
+    </span>
+  </div>
+</body>
+
+</html>

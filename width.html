@@ -21,12 +21,18 @@
     #a {
       width: 300px;
       text-align: center;
+      position: relative;
+      height: 300px;
+      /* content: url("1234.jpg") */
+      content: ('34555555555555555');
     }
 
     #b {
+      position: absolute;
+      left: 0px;
+      right: 0px;
       padding: 20px;
       background-color: greenyellow;
-      height: 100%;
     }
 
     #c {
@@ -79,14 +85,24 @@
       display: inline-block;
       text-align: left;
     }
+    #a p:nth-of-type(5){
+      color: red;
+    }
   </style>
 </head>
 
 <body>
 
   <div id="a">
+      <p>1</p>
+      <span>AA</span>
+      <p>2</p>
+      <span>BB</span>
+      <p>3</p>
+      <p>4</p>
+      <p>5</p>
+      <p>6</p>
     <div id="b">
-      <div id="b">345gfgsdfg4</div>
       <!-- <span class="pp"></span> -->
     </div>
   </div>
